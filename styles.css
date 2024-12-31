@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
 
-  
 .mobile-nav {
     display: none;
 }
@@ -173,7 +171,7 @@ h2 {
   
     .hide {
       display: block;
-      color: #343232 !important;
+      color: #667085 !important;
     }
   
     .about-sec img {
