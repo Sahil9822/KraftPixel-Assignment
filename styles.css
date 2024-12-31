@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+  
+.mobile-nav {
+    display: none;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 30px;
+    margin-top: 30px;
+}
+  
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.left > span, #product, #resources {
+    border: none;
+    outline: none;
+    color: #252121;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    color: #252121;
+    font-weight: bold;
+}
+  
+.right > .signup-btn {
+    margin-left: 20px;
+    background-color: #7f56d9;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.about-header h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #252121;
+}
+
+.about-sec {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: whitesmoke;
+}
+
+p {
+    color: #252121;
+}
+  
+h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #252121;
+}
+  
+.about-sec-text {
+    margin-top: 50px;
+}
+
+.about-sec-text > p {
+    color: #7f56d9;
+}
+
+.about-sec-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.about-sec-number-small {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+  
+.about-sec-number-small > .number {
+    font-size: 50px;
+    color: #7f56d9;
+    font-weight: 500;
+}
+  
+.about-sec-number-small > .text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #252121;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+.footer h5 {
+    color: #667085;
+    margin: 1rem;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      margin: 20px;
+    }
+  
+    .desktop-nav {
+      display: none;
+    }
+  
+    .mobile-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    nav .left,
+    nav .right {
+      display: block;
+      text-align: center;
+    }
+  
+    .left > span,
+    #product,
+    #recources,
+    .right > .login-btn,
+    .right > .signup-btn {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .about-sec {
+      flex-direction: column-reverse;
+    }
+  
+    h2 {
+      font-size: 30px;
+    }
+  
+    .hide {
+      display: block;
+      color: #343232 !important;
+    }
+  
+    .about-sec img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-sec-number {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .about-sec-number-small {
+      margin: 20px 0;
+    }
+    .about-sec-number-small > .number {
+      font-size: 48px;
+    }
+  
+    .about-sec-number-small > .text {
+      font-size: 18px;
+    }
+
+    .footer h5 {
+        color: #667085;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .socialmedia {
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+        margin: 1rem;
+        gap: 20px;
+    }
+
+}
